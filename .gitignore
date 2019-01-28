@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# CMake
+generator/CMakeCache.txt
+generator/CMakeFiles/**
+generator/Makefile
+generator/cmake_install.cmake
+
+# HW-specific
+out/**
