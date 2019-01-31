@@ -33,21 +33,21 @@ public:
      * Rectangle destructor.
      * @post Memory occupied by length and height is freed.
      */
-    ~Rectangle() = delete;
+    ~Rectangle();
 
     /**
      * Rectangle copy constructor.
      * @param rhs the (lvalue) Rectangle whose state is copied into this Rectangle upon construction
      * @post getLength() == rhs.getLength() && getHeight() == rhs.getHeight()
      */
-    Rectangle(const Rectangle &rhs) = delete;
+    Rectangle(const Rectangle &rhs);
 
     /**
      * Rectangle move constructor.
      * @param rhs the (rvalue) Rectangle whose state is moved into this Rectangle upon construction
      * @post getLength() == rhs.getLength() && getHeight() == rhs.getHeight()
      */
-    Rectangle(Rectangle &&rhs) = delete;
+    Rectangle(Rectangle &&rhs);
 
     /**
      * Copy assignment.
@@ -55,7 +55,7 @@ public:
      * @return A reference to this Rectangle is returned.
      * @post getLength() == rhs.getLength() && getHeight() == rhs.getHeight()
      */
-    Rectangle &operator=(const Rectangle &rhs) = delete;
+    Rectangle &operator=(const Rectangle &rhs);
 
     /**
      * Move assignment.
@@ -63,7 +63,7 @@ public:
      * @return A reference to this Rectangle is returned.
      * @post getLength() == rhs.getLength() && getHeight() == rhs.getHeight()
      */
-    Rectangle &operator=(Rectangle &&rhs) = delete;
+    Rectangle &operator=(Rectangle &&rhs);
 
     /**
      * Length accessor for this Rectangle.
